@@ -12,10 +12,19 @@
     "@emotion/react": "^11.10.0",
     "@mantine/core": "^5.0.3",
     "@mantine/hooks": "^5.0.3",
+    "@mantine/prism": "^5.1.4",
+    "@mdx-js/react": "^2.1.2",
+    "@mdx-js/rollup": "^2.1.2",
+    "@mediapipe/face_detection": "^0.4.1646425229",
+    "@tensorflow-models/face-detection": "^1.0.1",
+    "@tensorflow/tfjs-backend-webgl": "^3.19.0",
+    "@tensorflow/tfjs-converter": "^3.19.0",
+    "@tensorflow/tfjs-core": "^3.19.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
-    "react-router-dom": "^6.3.0"
+    "react-router-dom": "^6.3.0",
+    "react-webcam": "^7.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.15",

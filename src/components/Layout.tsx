@@ -16,7 +16,7 @@ import {
   Anchor,
 } from '@mantine/core';
 import { TbSun, TbMoon } from 'react-icons/tb';
-import { navlinks } from 'data/navlinks';
+import { navlinks } from 'components/navlinks';
 
 const useStyles = createStyles((theme) => ({
   appShell: {
@@ -50,11 +50,27 @@ const useStyles = createStyles((theme) => ({
     alignItems: 'center',
     paddingInline: theme.spacing.xl,
   },
-  children: {
+  prose: {
     maxWidth: theme.breakpoints.md,
     height: '100%',
     marginInline: 'auto',
     padding: theme.spacing.xl,
+    'h1, h2, h3, h4, h5, h6, p, ul, pre': {
+      paddingBottom: theme.spacing.md,
+    },
+    'h1, h2, h3, h4, h5, h6': {
+      paddingTop: theme.spacing.md,
+    },
+    a: {
+      color:
+        theme.colorScheme === 'light'
+          ? theme.colors.blue[7]
+          : theme.colors.blue[5],
+    },
+    code: {
+      fontFamily: theme.fontFamilyMonospace,
+      fontSize: theme.fontSizes.sm,
+    },
   },
 }));
 
@@ -136,7 +152,7 @@ export default function Layout({ children }: LayoutProps) {
         </Footer>
       }
     >
-      <div className={classes.children}>{children}</div>
+      <div className={classes.prose}>{children}</div>
     </AppShell>
   );
 }
