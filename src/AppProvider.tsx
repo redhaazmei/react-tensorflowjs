@@ -31,6 +31,7 @@ export default function AppProvider({ children }: AppProviderProps) {
         theme={{
           colorScheme,
           fontFamily: 'Inter, sans-serif',
+          fontFamilyMonospace: 'JetBrains Mono, monospace',
           headings: {
             fontFamily: 'Inter, sans-serif',
           },
